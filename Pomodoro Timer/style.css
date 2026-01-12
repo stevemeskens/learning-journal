@@ -48,3 +48,35 @@ button {
 button:hover {
     background-color: #ff552520;
 }
+/* timer colors during different states */
+.timer-display.running {
+    color: #51cf66;
+}
+.timer-display.paused {
+    color: #ffd43b;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+button.active {
+    transform:scale(0.95);
+}
+@media (max-width: 600px) {
+    
+    
+    .timer-display {
+        font-size: 3rem;
+    }
+    button {
+        width: 100%;
+    }
+    .buttons{flex-direction: column;}
+}
+
+.session-counter {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color:#51cf66
+}
